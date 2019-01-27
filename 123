@@ -1,0 +1,14 @@
+$("#TicketForm_verifyCode").val("");
+$("#TicketForm_verifyCode").focus();
+
+
+var data = document.getElementsByTagName('html')[0].innerHTML;
+$("#TicketForm_agree").prop('checked', true).prop('name', data.match(/TicketForm\[agree\]\[\S+\]/g));
+$("#TicketForm_checked").prop('name', data.match(/TicketForm\[ticketPrice\]\[(\S+[^checks])\]/g));
+
+$("[id^=TicketForm_ticketPrice_]").val('2')
+var id = $(".mobile-select").attr('id') ;
+document.getElementById(id).value = 2
+///$("#ticketPriceSubmit").click()
+$("img#yw0").css("width","350px");
+$("img#yw0").css("height","350px");
